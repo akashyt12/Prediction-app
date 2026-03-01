@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOTEX x STYLO v1.0</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="app-header">
+    <div>NOTEX x STYLO v1.0</div>
+    <div>⋮</div>
+</div>
+
+<!-- PAGE 1 -->
+<div id="page1" class="page active">
+    <div class="glass-card">
+
+        <h1>NOTEX x STYLO</h1>
+        <p class="security">🔐 Security Verification...</p>
+
+        <div class="loader">
+            <div class="loader-bar"></div>
+        </div>
+
+        <button class="telegram-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
+            Join Telegram
+        </button>
+
+        <button id="startBtn" class="start-btn">
+            Start Prediction
+        </button>
+
+    </div>
+</div>
+
+<!-- PAGE 2 -->
+<div id="page2" class="page">
+
+    <div class="glass-card">
+
+        <h2>Prediction Engine</h2>
+        <p id="userId"></p>
+
+        <div class="prediction-box">
+            <div>Period: <span id="period">-----</span></div>
+            <div>Prediction: <span id="prediction">WAITING</span></div>
+            <div>Time Left: <span id="timer">10:00</span></div>
+        </div>
+
+        <button id="startPrediction" class="start-btn">
+            Start 10 Minute Prediction
+        </button>
+
+        <!-- HISTORY TABLE -->
+        <div class="history-box">
+            <h3>Latest Results</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Period</th>
+                        <th>Number</th>
+                        <th>Size</th>
+                    </tr>
+                </thead>
+                <tbody id="historyBody">
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>
+
+<!-- FOOTER AD -->
+<div class="bottom-ad">
+    Banner Ad Space (Ad Code Yaha Lagao)
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
