@@ -137,3 +137,12 @@ td{
     align-items:center;
     font-size:14px;
   }
+
+.native-ad{
+    margin-top:15px;
+    padding:12px;
+    background:rgba(255,255,255,0.06);
+    border-radius:12px;
+    font-size:13px;
+    text-align:center;
+}
